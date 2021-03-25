@@ -27,8 +27,8 @@ public class Posts extends BaseTimeEntity {
 
     @Builder
     public Posts(String title, String content, String author){
-        Assert.notNull(title, "title must not be null");
-        Assert.notNull(author, "author must not be null");
+//        Assert.notNull(title, "title must not be null");
+//        Assert.notNull(author, "author must not be null");
 
         this.title = title;
         this.content = content;
