@@ -28,9 +28,9 @@ public class Lotto {
 
         }
 
-        for(int lottoarray :lotto ){
-            System.out.println(lottoarray);
-        }
+//        for(int lottoarray :lotto ){
+//            System.out.println(lottoarray);
+//        }
         return Arrays.toString(lotto);
     }
 
