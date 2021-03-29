@@ -4,6 +4,7 @@ package com.example.springbootwebservice.web;
 import com.example.springbootwebservice.config.auth.LoginUser;
 import com.example.springbootwebservice.config.auth.dto.SessionUser;
 import com.example.springbootwebservice.domain.user.User;
+import com.example.springbootwebservice.game.Lotto;
 import com.example.springbootwebservice.service.posts.PostsService;
 import com.example.springbootwebservice.web.dto.response.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
@@ -30,8 +31,6 @@ public class IndexController {
             model.addAttribute("userName", user.getName());
         }
 
-
-
         return "index";
     }
 
@@ -45,5 +44,12 @@ public class IndexController {
         PostsResponseDto dto = postsService.findById(id);
         model.addAttribute("post", dto);
         return "posts-update";
+    }
+
+    @GetMapping("/posts/lottoCall")
+    public String lottoCall(Model model){
+        Lotto lotto = new Lotto();
+        model.addAttribute("lotto", lotto.lotto());
+        return "lotto";
     }
 }
