@@ -8,7 +8,7 @@ import org.springframework.util.Assert;
 
 import javax.persistence.*;
 
-@Table(name = "posts")
+//@Table(name = "posts")
 @Entity
 @NoArgsConstructor
 @Getter
