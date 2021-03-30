@@ -20,17 +20,16 @@ import javax.servlet.http.HttpSession;
 public class IndexController {
 
     private final PostsService postsService;
-    private final HttpSession httpSession;
+//    private final HttpSession httpSession;
 
     @GetMapping("/")
     public String index(Model model, @LoginUser SessionUser user){
 
-        model.addAttribute("posts",postsService.findAllDesc());
-
-        if (user != null){
-            model.addAttribute("userName", user.getName());
+        if (user != null){ // 현재 로그인만 하면 게시판의 정보를 볼수있고 수정할수 있는데 추후에 해당 사용자만 내용을 수정,삭제할 수 있게 리팩토링 해야함.
+            model.addAttribute("clientName", user.getName());
+            model.addAttribute("posts",postsService.findAllDesc());
         }
-
+//        model.addAttribute("posts",postsService.findAllDesc());
         return "index";
     }
 
