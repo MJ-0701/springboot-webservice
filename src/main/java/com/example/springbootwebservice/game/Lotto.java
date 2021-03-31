@@ -16,7 +16,7 @@ public class Lotto {
             for(int j = 0; j<i; j++){
                 if(lotto[i] == lotto[j]){
                     i--;
-                    System.out.println("중복 다시 시작");
+                    System.out.println("중복 다시 시작, " +"중복 번호 : " + lotto[i]);
 //                    break;
                 }
                 if(lotto[i] < lotto[j]){

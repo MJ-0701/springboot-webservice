@@ -1,13 +1,12 @@
 package com.example.springbootwebservice.web;
 
 import com.example.springbootwebservice.web.dto.response.HelloResponseDto;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class HelloController {
-    @GetMapping("/hello")
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    @ResponseBody
     public String HelloController(){
         return "Hello";
     }

@@ -21,7 +21,7 @@ public class SpringSession {
     @Column(name = "session_id")
     private String sessionId;
 
-    @Column(name = "creatian_time")
+    @Column(name = "creation_time")
     private String creationTime;
 
     @Column(name = "last_access_time")
