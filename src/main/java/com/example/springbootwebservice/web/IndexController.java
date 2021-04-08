@@ -48,7 +48,7 @@ public class IndexController {
         return "posts-update";
     }
 
-    @GetMapping("/posts/lottoCall")
+    @GetMapping("/get/lottoCall")
     public String lottoCall(Model model){
         Lotto lotto = new Lotto();
         model.addAttribute("lotto", lotto.lotto());
