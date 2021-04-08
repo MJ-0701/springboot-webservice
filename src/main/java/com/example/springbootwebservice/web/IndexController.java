@@ -29,6 +29,9 @@ public class IndexController {
             model.addAttribute("clientName", user.getName());
             model.addAttribute("posts",postsService.findAllDesc());
         }
+        else{
+
+        }
 //        model.addAttribute("posts",postsService.findAllDesc());
         return "index";
     }
