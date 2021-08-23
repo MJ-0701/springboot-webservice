@@ -1,7 +1,7 @@
 # springboot-webservice
 http://ec2-15-164-53-245.ap-northeast-2.compute.amazonaws.com/ 프로젝트 도메인 입니다.
 
-해당 프로젝트는 서비스 로직을 개발하는것 보다는 AWS 튜토리얼 프로젝트 입니다.
+해당 프로젝트는 AWS 튜토리얼 프로젝트 입니다.
 
 해당 프로젝트는 ssl키설정을 하진 않았습니다.
 
