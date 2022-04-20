@@ -39,4 +39,4 @@ out/
 
 ### Oauth ###
 application-oauth.properties
-application-real-db.properties
+#application-real-db.properties
